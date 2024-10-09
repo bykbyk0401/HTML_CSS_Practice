@@ -35,6 +35,11 @@ a {
     padding: 8px 12px;
 }
 
+.navbar__menu li:hover {
+    background-color: #d49466;
+    border-radius: 4px;
+}
+
 .navbar__icons {
     list-style: none;
     color: white;
@@ -43,4 +48,30 @@ a {
 
 .navbar__icons li {
     padding: 8px 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        /* 너비가 넓어지면 텍스트는 자동으로 왼쪽정렬됨 */
+        text-align: center;
+    }
+
+    .navbar__icons {
+        justify-content: center;
+        width: 100%;
+        padding-left: 0;
+    }
 }
