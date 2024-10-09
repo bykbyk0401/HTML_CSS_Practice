@@ -88,4 +88,9 @@ a {
     .navbar__toogleBtn {
         display: block;
     }
+
+    .navbar__menu.active,
+    .navbar__icons.active {
+        display: flex;
+    }
 }
